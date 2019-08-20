@@ -9,7 +9,7 @@ services:
 # Setup the Nginx container
 ###########################
     web01:
-        image: nginx:1.14
+        image: nginx:1.16.1
         container_name: lemp-web01
         volumes:
             - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
@@ -20,7 +20,7 @@ services:
           - "traefik.backend=nginx-cluster"
           - "traefik.frontend.rule=Host:nginx.docker.localhost"
     web02:
-        image: nginx:1.14
+        image: nginx:1.16.1
         container_name: lemp-web02
         volumes:
             - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
@@ -31,7 +31,7 @@ services:
           - "traefik.backend=nginx-cluster"
           - "traefik.frontend.rule=Host:nginx.docker.localhost"
     web03:
-        image: nginx:1.14
+        image: nginx:1.16.1
         container_name: lemp-web03
         volumes:
             - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
