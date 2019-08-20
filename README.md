@@ -9,7 +9,7 @@ The following software is required before running LEMP for Docker:
 ## Install
 To build and start the complete stack simply run the following:
 ```
-$ git clone git@github.com:markolly/vim-config.git
+$ git clone git@github.com:markolly/docker-lemp.git
 $ cd docker-lemp
 $ docker-compose up -d
 ```
