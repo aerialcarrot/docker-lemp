@@ -91,7 +91,7 @@ services:
 # Setup the traefik Proxy/LB container
 ###########################
     traefik:
-      image: traefik:v1.7.4
+      image: traefik:v1.7
       container_name: lemp-traefik
       command: --web --docker --docker.domain=docker.localhost --logLevel=DEBUG
       ports:
